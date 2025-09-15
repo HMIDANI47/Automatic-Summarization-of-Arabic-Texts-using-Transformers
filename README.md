@@ -4,7 +4,7 @@
 
 ##  Overview
 This project addresses **automatic abstractive summarization of Arabic texts** using Transformer-based models.  
-The goal is to generate **concise, coherent summaries** of long Arabic news articles, leveraging the **XL-Sum dataset** and fine-tuning the **AraBART** model.  
+The goal is to generate **concise, coherent summaries** of long Arabic news articles, leveraging the **XL-Sum dataset** and fine-tuning the **AraBART** model and **Mbart**.  
 
 The work contributes to the underexplored field of **Arabic NLP**, where resources are scarce compared to English, and demonstrates that modern Transformers can effectively handle Arabic’s morphological and syntactic richness.
 
@@ -40,7 +40,7 @@ To improve data quality before training, a custom Arabic preprocessing pipeline 
 | **text_prepare** | Master function orchestrating all steps |
 
 ---
-
+## ⚙️ Models & Training
 ## ⚙️ Model: AraBART
 We fine-tuned **Jezia/AraBART-finetuned-wiki-ar** on XL-Sum Arabic.
 
@@ -70,7 +70,7 @@ Training was conducted with **PyTorch Lightning**, using `trainer.fit()` for eff
 
 ---
 
-## 📊 Evaluation Results
+##  Evaluation Results
 Two evaluation metrics were used:
 
 - **ROUGE-L** → measures lexical overlap between generated and reference summaries  
@@ -79,6 +79,54 @@ Two evaluation metrics were used:
 ### Results (AraBART)
 - **ROUGE-L:** Most scores between **0.15 and 0.40**  
 - **Semantic similarity:** Concentrated between **0.90 and 1.0**  
+
+### 🔹 Model 2: mBART
+- **Pretrained model:** `facebook/mbart-large-50-many-to-many-mmt`  
+- **Tokenizer:** MBartTokenizerFast with `ar_AR` as source & target language  
+- **Input length:** 512 tokens  
+- **Summary length:** 128 tokens  
+- **Training framework:** Hugging Face `Trainer`  
+- **Decoding:** Beam Search (5), repetition penalty = 1.0, length penalty = 0.8  
+
+**Hyperparameters**
+| Param                | Value |
+|----------------------|-------|
+| Learning rate        | 5e-5 (default Trainer) |
+| Batch size           | 4 |
+| Epochs               | 3 |
+| Optimizer            | AdamW |
+| Evaluation           | ROUGE-1, ROUGE-2, ROUGE-L, Semantic similarity |
+
+---
+
+## 📊 Results
+
+| Model   | ROUGE-L | Semantic Similarity | Notes |
+|---------|---------|----------------------|-------|
+| AraBART | 0.15–0.40 (avg ~0.27) | 0.90–1.0 | Strong semantic preservation, concise summaries |
+| mBART   | Lower overall ROUGE-L | ~0.92    | Multilingual, but less fluent in Arabic style |
+
+✅ **Conclusion:** AraBART generates more accurate and natural Arabic summaries compared to mBART, which sometimes produces longer or redundant sentences.  
+
+---
+
+## 🚀 Usage
+### Install dependencies
+```bash
+pip install -r requirements.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ✅ Interpretation: Even when lexical overlap is moderate, the generated summaries preserve the **semantic meaning** of the original references.
 
