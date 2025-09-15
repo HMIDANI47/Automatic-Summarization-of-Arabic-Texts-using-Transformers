@@ -1,6 +1,6 @@
 
 
-# 🕌 Automatic Summarization of Arabic Texts using Transformers
+#  Automatic Summarization of Arabic Texts using Transformers
 
 ##  Overview
 This project addresses **automatic abstractive summarization of Arabic texts** using Transformer-based models.  
@@ -99,7 +99,7 @@ Two evaluation metrics were used:
 
 ---
 
-## 📊 Results
+##  Results
 
 | Model   | ROUGE-L | Semantic Similarity | Notes |
 |---------|---------|----------------------|-------|
