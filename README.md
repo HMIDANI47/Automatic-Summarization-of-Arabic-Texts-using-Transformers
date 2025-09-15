@@ -41,7 +41,6 @@ To improve data quality before training, a custom Arabic preprocessing pipeline 
 | **text_prepare** | Master function orchestrating all steps |
 
 ---
-## ⚙️ Models & Training
 ## ⚙️ Model: AraBART
 We fine-tuned **Jezia/AraBART-finetuned-wiki-ar** on XL-Sum Arabic.
 
@@ -111,27 +110,6 @@ Two evaluation metrics were used:
 
 ---
 
-## 🚀 Usage
-### Install dependencies
-```bash
-pip install -r requirements.txt
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-✅ Interpretation: Even when lexical overlap is moderate, the generated summaries preserve the **semantic meaning** of the original references.
-
----
 
 ## 🚀 Usage
 ### Install dependencies
