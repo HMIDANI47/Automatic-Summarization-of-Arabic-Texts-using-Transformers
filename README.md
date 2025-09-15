@@ -9,6 +9,7 @@ The goal is to generate **concise, coherent summaries** of long Arabic news arti
 The work contributes to the underexplored field of **Arabic NLP**, where resources are scarce compared to English, and demonstrates that modern Transformers can effectively handle Arabic’s morphological and syntactic richness.
 
 ---
+![Project Architecture](images/text_summ.png)
 
 ## 📚 Dataset: XL-Sum (Arabic Subset)
 - **Source:** BBC Arabic news articles  
