@@ -10,8 +10,9 @@
 - [Project Pipeline](#project-pipeline)
 - [Dataset](#-dataset-xl-sum-arabic-subset)
 - [Preprocessing](#-preprocessing-pipeline)
-- [Models](#️-model-arabart)
-- [Evaluation](#-evaluation-results)
+- [Model: AraBART](#️-model-arabart)
+- [Model: mBART](#-model-2-mbart)
+- [Evaluation Results](#-evaluation-results)
 - [Results](#-results)
 - [Usage](#-usage)
 
