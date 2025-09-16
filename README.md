@@ -112,6 +112,15 @@ Two evaluation metrics were used:
 
 
 ## 🚀 Usage
+
+### Clone the repository
+```bash
+git clone https://github.com/your-username/arabic-text-summarization-transformers.git
+cd arabic-text-summarization-transformers
+
 ### Install dependencies
 ```bash
 pip install -r requirements.txt
+
+
+
