@@ -88,7 +88,6 @@ Two evaluation metrics were used:
 
 
   
-![Project Architecture](images/ARA_RESULT.png)
 
 ###  Model 2: mBART
 - **Pretrained model:** `facebook/mbart-large-50-many-to-many-mmt`  
