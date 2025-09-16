@@ -4,6 +4,18 @@
 
 
 ![Project Architecture](images/text_summ.png)
+
+##  Table of Contents
+- [Overview](#-overview)
+- [Project Pipeline](#project-pipeline)
+- [Dataset](#-dataset-xl-sum-arabic-subset)
+- [Preprocessing](#-preprocessing-pipeline)
+- [Models](#️-model-arabart)
+- [Evaluation](#-evaluation-results)
+- [Results](#-results)
+- [Usage](#-usage)
+
+
 ##  Overview
 This project addresses **automatic abstractive summarization of Arabic texts** using Transformer-based models.  
 The goal is to generate **concise, coherent summaries** of long Arabic news articles, leveraging the **XL-Sum dataset** and fine-tuning the **AraBART** model and **Mbart**.  
