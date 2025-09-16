@@ -25,7 +25,7 @@ The work contributes to the underexplored field of **Arabic NLP**, where resourc
 
 ---
 ## Project Pipeline
- ![Project Pipeline](/images/pipeline.png)
+ ![Project Pipeline](images/pipeline.PNG)
 
 
 
