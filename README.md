@@ -118,6 +118,7 @@ Two evaluation metrics were used:
 git clone https://github.com/your-username/arabic-text-summarization-transformers.git
 cd arabic-text-summarization-transformers
 
+---
 ### Install dependencies
 ```bash
 pip install -r requirements.txt
