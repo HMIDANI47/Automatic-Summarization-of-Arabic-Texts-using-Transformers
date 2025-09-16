@@ -12,7 +12,7 @@ The work contributes to the underexplored field of **Arabic NLP**, where resourc
 
 ---
 ## Project Pipeline
- ![Project Pipeline](./images/pipeline.png)
+ ![Project Pipeline](/images/pipeline.png)
 
 
 
@@ -84,6 +84,9 @@ Two evaluation metrics were used:
 ### Results (AraBART)
 - **ROUGE-L:** Most scores between **0.15 and 0.40**  
 - **Semantic similarity:** Concentrated between **0.90 and 1.0**
+
+
+
   
 ![Project Architecture](images/ARA_RESULT.png)
 
