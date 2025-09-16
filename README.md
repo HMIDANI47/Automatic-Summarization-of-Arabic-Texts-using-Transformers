@@ -6,15 +6,15 @@
 ![Project Architecture](images/text_summ.png)
 
 ##  Table of Contents
-- [Overview](#-overview)
+- [Overview](#overview)
 - [Project Pipeline](#project-pipeline)
-- [Dataset](#-dataset-xl-sum-arabic-subset)
-- [Preprocessing](#-preprocessing-pipeline)
+- [Dataset](#dataset-xl-sum-arabic-subset)
+- [Preprocessing](#preprocessing-pipeline)
 - [Model: AraBART](#️-model-arabart)
-- [Model: mBART](#-model-2-mbart)
-- [Evaluation Results](#-evaluation-results)
+- [Model: mBART](#model-2-mbart)
+- [Evaluation Results](#evaluation-results)
 - [Results](#results)
-- [Usage](#-usage)
+- [Usage](#usage)
 
 
 ##  Overview
