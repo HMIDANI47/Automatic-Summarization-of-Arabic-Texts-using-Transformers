@@ -2,6 +2,8 @@
 
 #  Automatic Summarization of Arabic Texts using Transformers
 
+
+![Project Architecture](images/text_summ.png)
 ##  Overview
 This project addresses **automatic abstractive summarization of Arabic texts** using Transformer-based models.  
 The goal is to generate **concise, coherent summaries** of long Arabic news articles, leveraging the **XL-Sum dataset** and fine-tuning the **AraBART** model and **Mbart**.  
@@ -9,9 +11,12 @@ The goal is to generate **concise, coherent summaries** of long Arabic news arti
 The work contributes to the underexplored field of **Arabic NLP**, where resources are scarce compared to English, and demonstrates that modern Transformers can effectively handle Arabic’s morphological and syntactic richness.
 
 ---
-![Project Architecture](images/text_summ.png)
+## Project Pipeline
+ ![Project Pipeline](./images/pipeline.png)
 
-## 📚 Dataset: XL-Sum (Arabic Subset)
+
+
+##  Dataset: XL-Sum (Arabic Subset)
 - **Source:** BBC Arabic news articles  
 - **Task type:** Abstractive summarization (single-sentence summaries)  
 - **Format:** Each entry contains two fields → `text` (article body) & `summary` (gold summary)  
@@ -24,7 +29,7 @@ The work contributes to the underexplored field of **Arabic NLP**, where resourc
 
 ---
 
-## 🧹 Preprocessing Pipeline
+##  Preprocessing Pipeline
 To improve data quality before training, a custom Arabic preprocessing pipeline was built:
 
 | Step | Description |
@@ -78,9 +83,11 @@ Two evaluation metrics were used:
 
 ### Results (AraBART)
 - **ROUGE-L:** Most scores between **0.15 and 0.40**  
-- **Semantic similarity:** Concentrated between **0.90 and 1.0**  
+- **Semantic similarity:** Concentrated between **0.90 and 1.0**
+  
+![Project Architecture](images/ARA_RESULT.png)
 
-### 🔹 Model 2: mBART
+###  Model 2: mBART
 - **Pretrained model:** `facebook/mbart-large-50-many-to-many-mmt`  
 - **Tokenizer:** MBartTokenizerFast with `ar_AR` as source & target language  
 - **Input length:** 512 tokens  
@@ -111,7 +118,7 @@ Two evaluation metrics were used:
 ---
 
 
-## 🚀 Usage
+##  Usage
 
 ### Clone the repository
 ```bash
