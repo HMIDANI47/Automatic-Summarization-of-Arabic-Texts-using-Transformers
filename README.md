@@ -13,7 +13,7 @@
 - [Model: AraBART](#️-model-arabart)
 - [Model: mBART](#-model-2-mbart)
 - [Evaluation Results](#-evaluation-results)
-- [Results](#-results)
+- [Results](#results)
 - [Usage](#-usage)
 
 
